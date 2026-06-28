@@ -77,3 +77,11 @@ npm test
 ```
 
 Use `npm run render:sample` for a manual worker smoke run. Generated frames are written under `storage/outputs`, which is intentionally ignored by Git.
+## Local Development Goal
+
+The first implementation milestone should add:
+
+1. `apps/web` for the upload/status UI and API routes.
+2. `apps/worker` for the render worker.
+3. Shared job contracts under `packages/shared`.
+4. Docker Compose services for Redis and local object-storage emulation.
