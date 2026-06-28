@@ -84,3 +84,13 @@
 - Invalid input fails safely with a clear error.
 - Worker cleans up intermediate files after success or failure.
 - CI runs type checks and at least one smoke test.
+
+## Completed Foundation Work
+
+- [x] Add repository-level README and product documentation.
+- [x] Add primary SVG logo and brand guidance.
+- [x] Add workspace package metadata and root scripts.
+- [x] Add shared job statuses, render presets, and job creation helpers.
+- [x] Add a zero-dependency web shell with a health endpoint and branded landing page.
+- [x] Add a worker smoke test that writes deterministic sample frames.
+- [x] Add a seekable sample HTML animation using `window.__FRAMEFORGE_RENDER_FRAME__`.

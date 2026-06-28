@@ -49,6 +49,34 @@ flowchart LR
 - **Object Storage:** Cloudflare R2 or S3-compatible storage.
 - **Monitoring:** Sentry plus structured worker logs.
 
+## Local Development
+
+Run the initial web shell and worker smoke test with Node.js 22 or newer:
+
+```bash
+npm test
+npm run render:sample
+npm run start:web
+```
+
+Current scaffold:
+
+1. `apps/web` contains a zero-dependency Node web shell with a health check and branded landing page.
+2. `apps/worker` contains a sample deterministic frame writer that produces SVG frames under `storage/outputs`.
+3. `packages/shared` contains shared job statuses, presets, and job construction helpers.
+4. `samples/basic-render` contains a minimal HTML animation exposing the planned `window.__FRAMEFORGE_RENDER_FRAME__` hook.
+
+Next implementation milestones are browser-based screenshot capture, queue persistence, upload handling, and FFmpeg MP4 encoding.
+
+## Testing
+
+The default test suite uses Node's built-in test runner and covers shared job helpers, the worker sample-render path, and the web server health/landing responses:
+
+```bash
+npm test
+```
+
+Use `npm run render:sample` for a manual worker smoke run. Generated frames are written under `storage/outputs`, which is intentionally ignored by Git.
 ## Local Development Goal
 
 The first implementation milestone should add:
