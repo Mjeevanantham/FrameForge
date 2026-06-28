@@ -1,0 +1,20 @@
+{
+  "name": "frameforge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Deterministic HTML-to-MP4 rendering platform for Claude, React, and HTML animations.",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "start:web": "node apps/web/src/server.js",
+    "start:worker": "node apps/worker/src/worker.js",
+    "render:sample": "node apps/worker/src/worker.js --sample",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

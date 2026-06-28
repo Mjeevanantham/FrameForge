@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">FrameForge logo</title>
+  <desc id="desc">A neon gradient film-strip F with a play button, FrameForge wordmark, and tagline.</desc>
+  <defs>
+    <linearGradient id="markGradient" x1="230" y1="755" x2="905" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c026ff"/>
+      <stop offset="0.34" stop-color="#7c3cff"/>
+      <stop offset="0.66" stop-color="#1688ff"/>
+      <stop offset="1" stop-color="#16f0f0"/>
+    </linearGradient>
+    <linearGradient id="wordGradient" x1="645" y1="790" x2="1090" y2="790" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c026ff"/>
+      <stop offset="0.52" stop-color="#2388ff"/>
+      <stop offset="1" stop-color="#16f0f0"/>
+    </linearGradient>
+    <linearGradient id="lineGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c026ff"/>
+      <stop offset="1" stop-color="#16f0f0"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.2 0 0 0 0 0.4 0 0 0 0 1 0 0 0 .55 0" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#001246" flood-opacity="0.75"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1200" fill="#03050b"/>
+  <circle cx="610" cy="510" r="440" fill="#061027" opacity="0.28"/>
+
+  <g filter="url(#glow)">
+    <path d="M372 713 L438 312 C450 239 506 215 576 205 L868 163 C882 161 888 166 885 179 L877 218 C859 300 806 340 712 350 L534 368 C501 372 486 389 480 424 L467 500 C462 530 475 543 506 540 L669 523 C696 520 710 505 715 478 L718 460 C720 449 726 443 737 442 L806 434 C819 433 825 440 821 453 L810 503 C792 586 740 626 648 637 L552 648 C516 652 499 670 493 707 L486 747 C480 779 461 798 430 803 L389 810 C376 812 369 805 372 713 Z" fill="url(#markGradient)" filter="url(#shadow)"/>
+    <path d="M420 710 L463 450 C472 394 500 364 554 357 L816 324 C782 348 748 361 710 365 L534 383 C510 386 501 397 496 426 L482 503 C475 546 497 567 541 563 L684 548 C662 605 619 633 546 642 C501 647 478 672 470 719 L464 752 C456 766 443 774 425 777 L394 782 C407 772 416 748 420 710 Z" fill="#090b16" opacity="0.24"/>
+    <g fill="#05060c">
+      <rect x="461" y="260" width="34" height="31" rx="5" transform="rotate(-8 478 276)"/>
+      <rect x="447" y="320" width="34" height="31" rx="5" transform="rotate(-8 464 336)"/>
+      <rect x="433" y="381" width="34" height="31" rx="5" transform="rotate(-8 450 397)"/>
+      <rect x="419" y="442" width="34" height="31" rx="5" transform="rotate(-8 436 458)"/>
+      <rect x="405" y="504" width="34" height="31" rx="5" transform="rotate(-8 422 520)"/>
+      <rect x="391" y="565" width="34" height="31" rx="5" transform="rotate(-8 408 581)"/>
+      <rect x="377" y="626" width="34" height="31" rx="5" transform="rotate(-8 394 642)"/>
+    </g>
+    <path d="M568 374 C568 359 585 350 598 358 L648 390 C661 399 661 418 648 426 L598 458 C585 466 568 457 568 442 Z" fill="#f7f9ff" filter="url(#shadow)"/>
+  </g>
+
+  <g font-family="Inter, Montserrat, Arial, sans-serif" font-weight="800" font-size="118" letter-spacing="-5">
+    <text x="130" y="860" fill="#f7f7fb">Frame</text>
+    <text x="663" y="860" fill="url(#wordGradient)">Forge</text>
+  </g>
+
+  <g font-family="Inter, Montserrat, Arial, sans-serif" font-weight="700" font-size="31" letter-spacing="14" fill="#d8dce8" opacity="0.9">
+    <text x="292" y="944">TRANSFORM AI DESIGNS INTO</text>
+    <text x="273" y="988">PRODUCTION-QUALITY VIDEOS</text>
+  </g>
+  <rect x="166" y="935" width="82" height="4" rx="2" fill="url(#lineGradient)"/>
+  <rect x="982" y="935" width="82" height="4" rx="2" fill="url(#lineGradient)"/>
+</svg>
